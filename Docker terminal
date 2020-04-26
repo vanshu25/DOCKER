@@ -1,0 +1,21 @@
+#Build our static HTML image using the build command below:
+
+  docker build -t webserver-image:v1 .
+  
+# to check list of all images:
+  
+  docker images
+  
+#The built image will have the name webserver-image with a tag of v1.
+
+# It's time to run our page:
+ 
+ docker run -d -p 80:80 webserver-image:v1
+ 
+# Once started, you'll be able to access the results of port 80 via:
+
+  curl docker
+  
+  
+
+  
